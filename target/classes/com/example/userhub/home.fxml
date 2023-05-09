@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="820.0" style="-fx-background-color: #2b2a2a;" stylesheets="@../../../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.userhub.HomeController">
+    <children>
+        <Label layoutX="287.0" layoutY="30.0" text="Свежие новости" textFill="#fafafa">
+            <font>
+                <Font name="ISOCP" size="33.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="27.0" layoutY="26.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="177.0" text="Выйти из аккаунта">
+            <font>
+                <Font size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="CLOSED_HAND" />
+            </cursor>
+        </Button>
+      <Button fx:id="CreateButton" layoutX="609.0" layoutY="26.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="177.0" text="Написать статью">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+      <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutX="-1.0" layoutY="134.0" prefHeight="426.0" prefWidth="820.0" style="-fx-background-color: #2b2a2a;">
+         <content>
+            <VBox fx:id="pVBox" prefHeight="424.0" prefWidth="818.0" style="-fx-background-color: #2b2a2a;" styleClass="Vbox" stylesheets="@../../../styles/style.css" />
+         </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>

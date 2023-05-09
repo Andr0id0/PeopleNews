@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="820.0" style="-fx-background-color: #2b2a2a;" stylesheets="@../../../styles/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.userhub.ceckStateController">
+    <children>
+        <Button fx:id="BackButton" layoutX="659.0" layoutY="39.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="124.0" text="Назад">
+            <font>
+                <Font size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="CLOSED_HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="StateName" layoutX="32.0" layoutY="49.0" text="Название Статьи" textFill="#fafafa">
+            <font>
+                <Font name="ISOCP" size="24.0" />
+            </font>
+        </Label>
+      <Label fx:id="text" alignment="TOP_LEFT" layoutX="19.0" layoutY="151.0" prefHeight="301.0" prefWidth="783.0" text="Текст Статьи" textFill="#fafafa">
+         <font>
+            <Font name="ISOCP" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="views" layoutX="430.0" layoutY="51.0" text="Просмотры" textFill="#fafafa">
+         <font>
+            <Font name="ISOCP" size="19.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
